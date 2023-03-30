@@ -1,38 +1,56 @@
 import HeaderCoffee from '../../../../assets/header-coffee.svg'
-import { MapPin } from 'phosphor-react'
-import { IntroContainer, ListItems, Item } from './styles'
+import { ShoppingCart, Package, Coffee, Timer } from 'phosphor-react'
+import {
+  IntroContainer,
+  IntroLeft,
+  IntroRight,
+  ListItems,
+  ItemCicle,
+  Item,
+  TitleContend,
+} from './styles'
 
 export function Intro() {
   return (
     <IntroContainer>
-      <div>
-        <h1>Encontre o café perfeito para qualquer hora do dia</h1>
-        <p>
-          Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
-          hora
-        </p>
+      <IntroLeft>
+        <TitleContend>
+          <h1>Encontre o café perfeito para qualquer hora do dia</h1>
+          <p>
+            Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
+            hora
+          </p>
+        </TitleContend>
         <ListItems>
           <Item>
-            <MapPin weight="fill" color="#4B2995" size={20} />
+            <ItemCicle>
+              <ShoppingCart weight="fill" color="#ffff" size={16} />
+            </ItemCicle>
             <p>Compra simples e segura</p>
           </Item>
           <Item>
-            <MapPin weight="fill" color="#4B2995" size={20} />
-            <p>Compra simples e segura</p>
+            <ItemCicle>
+              <Package weight="fill" color="#ffff" size={16} />
+            </ItemCicle>
+            <p>Embalagem mantém o café intacto</p>
           </Item>
           <Item>
-            <MapPin weight="fill" color="#4B2995" size={20} />
-            <p>Compra simples e segura</p>
+            <ItemCicle>
+              <Coffee weight="fill" color="#ffff" size={16} />
+            </ItemCicle>
+            <p>Entrega rápida e rastreada</p>
           </Item>
           <Item>
-            <MapPin weight="fill" color="#4B2995" size={20} />
-            <p>Compra simples e segura</p>
+            <ItemCicle>
+              <Timer weight="fill" color="#ffff" size={16} />
+            </ItemCicle>
+            <p>O café chega fresquinho até você</p>
           </Item>
         </ListItems>
-      </div>
-      <div>
+      </IntroLeft>
+      <IntroRight>
         <img src={HeaderCoffee} alt="Copo de cafe" />
-      </div>
+      </IntroRight>
     </IntroContainer>
   )
 }

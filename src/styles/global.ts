@@ -17,4 +17,12 @@ export const GlobalStyled = createGlobalStyle`
         font-weight: 400;
         font-size: 1rem;
     }
+
+    h1 {
+        font-family: 'Baloo 2', cursive;
+        font-weight: 800;
+        font-size: 3rem;
+        line-height: 100%;
+        margin: 20px 0;
+    }
 `
