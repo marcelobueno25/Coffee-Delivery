@@ -29,7 +29,7 @@ export const Tag = styled.small`
   background: ${(props) => props.theme['yellow-light']};
   padding: 3px 10px;
   border-radius: 20px;
-  margin: 10px;
+  margin: 3px;
 `
 
 export const Description = styled.small`

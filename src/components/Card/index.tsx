@@ -1,3 +1,4 @@
+import { Counter } from '../Counter'
 import { CardContainer, CardTexts, Description, Tag } from './styles'
 
 export function Card({ children, title, description, src, tag }: any) {
@@ -11,6 +12,7 @@ export function Card({ children, title, description, src, tag }: any) {
         <h3>{title}</h3>
         <Description>{description}</Description>
       </CardTexts>
+      <Counter />
       {children}
     </CardContainer>
   )

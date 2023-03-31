@@ -23,25 +23,25 @@ export function Intro() {
         </TitleContend>
         <ListItems>
           <Item>
-            <ItemCicle>
+            <ItemCicle variant="yellow-dark">
               <ShoppingCart weight="fill" color="#ffff" size={16} />
             </ItemCicle>
             <p>Compra simples e segura</p>
           </Item>
           <Item>
-            <ItemCicle>
+            <ItemCicle variant="base-text">
               <Package weight="fill" color="#ffff" size={16} />
             </ItemCicle>
             <p>Embalagem mantém o café intacto</p>
           </Item>
           <Item>
-            <ItemCicle>
+            <ItemCicle variant="yellow">
               <Coffee weight="fill" color="#ffff" size={16} />
             </ItemCicle>
             <p>Entrega rápida e rastreada</p>
           </Item>
           <Item>
-            <ItemCicle>
+            <ItemCicle variant="purple">
               <Timer weight="fill" color="#ffff" size={16} />
             </ItemCicle>
             <p>O café chega fresquinho até você</p>
