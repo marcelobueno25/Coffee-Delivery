@@ -1,17 +1,25 @@
 import styled from 'styled-components'
 
 type IconsVariant = 'yellow-dark' | 'base-text' | 'yellow' | 'purple'
+
 interface ItemCicle {
   variant: IconsVariant
 }
 
 export const IntroContainer = styled.div`
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   grid-gap: 10px;
   margin: 5rem 0;
   align-items: center;
   justify-content: space-around;
+`
+export const BGColor = styled.img`
+  position: absolute;
+  width: 100%;
+  top: -50%;
+  left: 0px;
 `
 
 export const IntroLeft = styled.div`
@@ -21,11 +29,12 @@ export const IntroLeft = styled.div`
 export const IntroRight = styled.div`
   display: flex;
   justify-content: center;
-  max-width: 400px;
+  //max-width: 400px;
 
   img {
     //height: 00px;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
   }
 `
 
@@ -41,6 +50,7 @@ export const Item = styled.div`
   align-items: center;
 `
 
+// eslint-disable-next-line no-redeclare
 export const ItemCicle = styled.div<ItemCicle>`
   display: flex;
   justify-content: center;
@@ -58,4 +68,5 @@ export const ItemCicle = styled.div<ItemCicle>`
 export const TitleContend = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 3em;
 `

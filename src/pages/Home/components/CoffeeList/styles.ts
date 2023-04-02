@@ -12,5 +12,5 @@ export const List = styled.div`
   row-gap: 30px;
   column-gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-items: center;
 `

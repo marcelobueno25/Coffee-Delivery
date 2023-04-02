@@ -6,12 +6,15 @@ export const GlobalStyled = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
     :focus {
         outline: none;
     }
+
     body {
         color: ${(props) => props.theme['base-title']};
     }
+
     body, input, textarea, button {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -26,7 +29,6 @@ export const GlobalStyled = createGlobalStyle`
         line-height: 100%;
         margin: 20px 0;
     }
-
     
     h2 {
         font-family: 'Baloo 2', cursive;
@@ -44,5 +46,9 @@ export const GlobalStyled = createGlobalStyle`
         font-size: 1.2rem;
         line-height: 100%;
         margin: 5px 0;
+    }
+
+    p {
+        font-size: 1rem;
     }
 `

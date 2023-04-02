@@ -1,7 +1,9 @@
-import HeaderCoffee from '../../../../assets/header-coffee.svg'
+import headerCoffee from '../../../../assets/header-coffee.svg'
+import bgIntro from '../../../../assets/bgIntro.png'
 import { ShoppingCart, Package, Coffee, Timer } from 'phosphor-react'
 import {
   IntroContainer,
+  BGColor,
   IntroLeft,
   IntroRight,
   ListItems,
@@ -49,8 +51,9 @@ export function Intro() {
         </ListItems>
       </IntroLeft>
       <IntroRight>
-        <img src={HeaderCoffee} alt="Copo de cafe" />
+        <img src={headerCoffee} alt="Copo de cafe" />
       </IntroRight>
+      <BGColor src={bgIntro} />
     </IntroContainer>
   )
 }
