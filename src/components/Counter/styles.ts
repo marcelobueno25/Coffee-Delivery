@@ -5,9 +5,25 @@ export const CounterContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 80px;
-  border-radius: 10px;
+  max-width: 90px;
+  border-radius: 0.4em;
   padding: 0 10px;
+  height: 2.2rem;
+  margin: 0 5px;
+
+  .counterAdd,
+  .counterRemove {
+    color: ${(props) => props.theme['purple-dark']};
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 `
 
 export const CounterInput = styled.input`

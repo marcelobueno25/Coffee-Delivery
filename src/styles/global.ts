@@ -45,10 +45,12 @@ export const GlobalStyled = createGlobalStyle`
         font-weight: 800;
         font-size: 1.2rem;
         line-height: 100%;
-        margin: 5px 0;
+        margin: 10px 0;
+        margin-bottom: 15px;
     }
 
     p {
+        font-family: 'Roboto', sans-serif;
         font-size: 1rem;
     }
 `

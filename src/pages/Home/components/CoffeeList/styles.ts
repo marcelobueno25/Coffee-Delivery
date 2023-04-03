@@ -10,7 +10,7 @@ export const List = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   row-gap: 30px;
-  column-gap: 30px;
+  column-gap: 20px;
   flex-wrap: wrap;
   justify-items: center;
 `

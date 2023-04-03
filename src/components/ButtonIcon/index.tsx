@@ -1,5 +1,10 @@
 import { ButtonIconStyled } from './styles'
+import { ShoppingCartSimple } from 'phosphor-react'
 
-export function ButtonIcon({ children }: any) {
-  return <ButtonIconStyled>{children}</ButtonIconStyled>
+export function ButtonIcon() {
+  return (
+    <ButtonIconStyled>
+      <ShoppingCartSimple weight="fill" />
+    </ButtonIconStyled>
+  )
 }

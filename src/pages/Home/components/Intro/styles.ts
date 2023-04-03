@@ -11,15 +11,16 @@ export const IntroContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   grid-gap: 10px;
-  margin: 5rem 0;
   align-items: center;
   justify-content: space-around;
 `
 export const BGColor = styled.img`
   position: absolute;
   width: 100%;
-  top: -50%;
+  top: -3em;
   left: 0px;
+  z-index: -1;
+  height: 100%;
 `
 
 export const IntroLeft = styled.div`
@@ -29,10 +30,8 @@ export const IntroLeft = styled.div`
 export const IntroRight = styled.div`
   display: flex;
   justify-content: center;
-  //max-width: 400px;
 
   img {
-    //height: 00px;
     max-width: 500px;
     width: 100%;
   }
@@ -59,6 +58,23 @@ export const ItemCicle = styled.div<ItemCicle>`
   width: 30px;
   border-radius: 50%;
   margin-right: 10px;
+  animation-name: cicle-intro-animation;
+  animation-duration: 1s;
+  animation-iteration-count: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+  @keyframes cicle-intro-animation {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 
   ${(props) => {
     return `background: ${props.theme[props.variant]}`
