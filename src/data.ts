@@ -28,7 +28,7 @@ export const data: dataProps[] = [
     name: 'Expresso Tradicional',
     tags: ['Tradicional'],
     description: 'Expresso diluído, menos intenso que o tradicional',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image0,
   },
   {
@@ -36,7 +36,7 @@ export const data: dataProps[] = [
     name: 'Expresso Americano',
     tags: ['Tradicional'],
     description: 'Expresso diluído, menos intenso que o tradicional',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image1,
   },
   {
@@ -44,7 +44,7 @@ export const data: dataProps[] = [
     name: 'Expresso Cremoso',
     tags: ['Tradicional'],
     description: 'Café expresso tradicional com espuma cremosa',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image2,
   },
   {
@@ -52,7 +52,7 @@ export const data: dataProps[] = [
     name: 'Expresso Gelado',
     tags: ['Tradicional', 'Gelado'],
     description: 'Bebida preparada com café expresso e cubos de gelo',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image3,
   },
   {
@@ -60,7 +60,7 @@ export const data: dataProps[] = [
     name: 'Café com Leite',
     tags: ['Tradicional', 'Com leite'],
     description: 'Café expresso com calda de chocolate, pouco leite e espuma',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image4,
   },
   {
@@ -68,7 +68,7 @@ export const data: dataProps[] = [
     name: 'Latte',
     tags: ['Tradicional', 'Com leite'],
     description: 'Bebida feita com chocolate dissolvido no leite quente e café',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image5,
   },
   {
@@ -77,7 +77,7 @@ export const data: dataProps[] = [
     tags: ['Tradicional', 'Com leite'],
     description:
       'Drink gelado de café expresso com rum, creme de leite e hortelã',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image6,
   },
   {
@@ -85,7 +85,7 @@ export const data: dataProps[] = [
     name: 'Macchiato',
     tags: ['Tradicional', 'Com leite'],
     description: 'Bebida adocicada preparada com café e leite de coco',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image7,
   },
   {
@@ -93,7 +93,7 @@ export const data: dataProps[] = [
     name: 'Mocaccino',
     tags: ['Tradicional', 'Com leite'],
     description: 'Café expresso com calda de chocolate, pouco leite e espuma',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image8,
   },
   {
@@ -101,7 +101,7 @@ export const data: dataProps[] = [
     name: 'Chocolate Quente',
     tags: ['Especial', 'Gelado'],
     description: 'Bebida feita com chocolate dissolvido no leite quente e café',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image9,
   },
   {
@@ -110,7 +110,7 @@ export const data: dataProps[] = [
     tags: ['Especial', 'Alcoólico', 'Gelado'],
     description:
       'Drink gelado de café expresso com rum, creme de leite e hortelã',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image10,
   },
   {
@@ -118,7 +118,7 @@ export const data: dataProps[] = [
     name: 'Havaiano',
     tags: ['Especial'],
     description: 'Bebida adocicada preparada com café e leite de coco',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image11,
   },
 
@@ -127,7 +127,7 @@ export const data: dataProps[] = [
     name: 'Árabe',
     tags: ['Especial'],
     description: 'Bebida preparada com grãos de café árabe e especiarias',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image12,
   },
   {
@@ -135,7 +135,7 @@ export const data: dataProps[] = [
     name: 'Irlandês',
     tags: ['Especial', 'Alcoólico'],
     description: 'Bebida a base de café, uísque irlandês, açúcar e chantilly',
-    price: 'R$ 9,90',
+    price: '9,90',
     src: image13,
   },
 ]

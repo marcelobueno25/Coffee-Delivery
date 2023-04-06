@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CounterContainer = styled.div`
-  background: ${(props) => props.theme['base-button']};
+  background: ${(props) => props.theme.colors['base-button']};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@ export const CounterContainer = styled.div`
 
   .counterAdd,
   .counterRemove {
-    color: ${(props) => props.theme['purple-dark']};
+    color: ${(props) => props.theme.colors['purple-dark']};
     width: 40px;
     height: 40px;
 
@@ -27,7 +27,7 @@ export const CounterContainer = styled.div`
 `
 
 export const CounterInput = styled.input`
-  background: ${(props) => props.theme['base-button']};
+  background: ${(props) => props.theme.colors['base-button']};
   border: none;
   font-size: 25;
   padding: 5px;

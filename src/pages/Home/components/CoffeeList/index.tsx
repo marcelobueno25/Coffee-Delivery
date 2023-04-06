@@ -1,22 +1,17 @@
-import { Card } from '../../../../components/Card'
+import { CardCoffee } from '../../../../components/CardCoffee'
 import { CoffeeListContainer, List } from './styles'
 import { data } from '../../../../data'
+import { TitleText } from '../../../../components/Typography'
 
 export function CoffeeList() {
   return (
     <CoffeeListContainer>
-      <h2>Nossos cafés</h2>
+      <TitleText size={'l'} color="subtitle">
+        Nossos cafés
+      </TitleText>
       <List>
-        {data.map((item) => {
-          return (
-            <Card
-              key={item.id}
-              title={item.name}
-              description={item.description}
-              tag={item.tags.map((item) => item)}
-              src={item.src}
-            ></Card>
-          )
+        {data.map((coffee) => {
+          return <CardCoffee coffee={coffee} key={coffee.id} />
         })}
       </List>
     </CoffeeListContainer>

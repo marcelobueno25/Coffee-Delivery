@@ -12,7 +12,7 @@ export const GlobalStyled = createGlobalStyle`
     }
 
     body {
-        color: ${(props) => props.theme['base-title']};
+        color: ${(props) => props.theme.colors['base-title']};
     }
 
     body, input, textarea, button {
@@ -23,7 +23,7 @@ export const GlobalStyled = createGlobalStyle`
 
     h1 {
         font-family: 'Baloo 2', cursive;
-        color: ${(props) => props.theme['base-title']};
+        color: ${(props) => props.theme.colors['base-title']};
         font-weight: 800;
         font-size: 3rem;
         line-height: 100%;
@@ -32,7 +32,7 @@ export const GlobalStyled = createGlobalStyle`
     
     h2 {
         font-family: 'Baloo 2', cursive;
-        color: ${(props) => props.theme['base-subtitle']};
+        color: ${(props) => props.theme.colors['base-subtitle']};
         font-weight: 800;
         font-size: 2rem;
         line-height: 100%;
@@ -41,7 +41,7 @@ export const GlobalStyled = createGlobalStyle`
 
     h3 {
         font-family: 'Baloo 2', cursive;
-        color: ${(props) => props.theme['base-subtitle']};
+        color: ${(props) => props.theme.colors['base-subtitle']};
         font-weight: 800;
         font-size: 1.2rem;
         line-height: 100%;

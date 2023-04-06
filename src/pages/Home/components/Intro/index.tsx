@@ -1,59 +1,73 @@
+import { ReactNode } from 'react'
 import headerCoffee from '../../../../assets/header-coffee.svg'
 import bgIntro from '../../../../assets/bgIntro.png'
 import { ShoppingCart, Package, Coffee, Timer } from 'phosphor-react'
 import {
   IntroContainer,
-  BGColor,
-  IntroLeft,
-  IntroRight,
+  InfoIconContainer,
   ListItems,
-  ItemCicle,
-  Item,
   TitleContend,
 } from './styles'
+import { TitleText, RegularText } from '../../../../components/Typography'
+import { useTheme } from 'styled-components'
 
 export function Intro() {
+  const { colors } = useTheme()
+
+  interface InfoIconProps {
+    text: string
+    icon: string | ReactNode
+    color: string
+  }
+
+  const InfoIcon = ({ text, icon, color }: InfoIconProps) => (
+    <InfoIconContainer>
+      <div className="iconContainer" style={{ background: color }}>
+        {icon}
+      </div>
+      <p>{text}</p>
+    </InfoIconContainer>
+  )
+
   return (
     <IntroContainer>
-      <IntroLeft>
+      <div className="introLeft">
         <TitleContend>
-          <h1>Encontre o café perfeito para qualquer hora do dia</h1>
-          <p>
+          <TitleText size={'xl'}>
+            Encontre o café perfeito para qualquer hora do dia
+          </TitleText>
+          <RegularText size={'l'}>
             Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
             hora
-          </p>
+          </RegularText>
         </TitleContend>
         <ListItems>
-          <Item>
-            <ItemCicle variant="yellow-dark">
-              <ShoppingCart weight="fill" color="#ffff" size={16} />
-            </ItemCicle>
-            <p>Compra simples e segura</p>
-          </Item>
-          <Item>
-            <ItemCicle variant="base-text">
-              <Package weight="fill" color="#ffff" size={16} />
-            </ItemCicle>
-            <p>Embalagem mantém o café intacto</p>
-          </Item>
-          <Item>
-            <ItemCicle variant="yellow">
-              <Coffee weight="fill" color="#ffff" size={16} />
-            </ItemCicle>
-            <p>Entrega rápida e rastreada</p>
-          </Item>
-          <Item>
-            <ItemCicle variant="purple">
-              <Timer weight="fill" color="#ffff" size={16} />
-            </ItemCicle>
-            <p>O café chega fresquinho até você</p>
-          </Item>
+          <InfoIcon
+            text={'Compra simples e segura'}
+            icon={<ShoppingCart weight="fill" />}
+            color={colors['yellow-dark']}
+          />
+          <InfoIcon
+            text={'Embalagem mantém o café intacto'}
+            icon={<Package weight="fill" />}
+            color={colors['base-text']}
+          />
+          <InfoIcon
+            text={'Entrega rápida e rastreada'}
+            icon={<Coffee weight="fill" />}
+            color={colors.yellow}
+          />
+          <InfoIcon
+            text={'O café chega fresquinho até você'}
+            icon={<Timer weight="fill" />}
+            color={colors.purple}
+          />
         </ListItems>
-      </IntroLeft>
-      <IntroRight>
+      </div>
+      <div className="introRight">
         <img src={headerCoffee} alt="Copo de cafe" />
-      </IntroRight>
-      <BGColor src={bgIntro} />
+      </div>
+      <img className="bgColorIntro" src={bgIntro} alt={'Foto de um Cafe'} />
     </IntroContainer>
   )
 }

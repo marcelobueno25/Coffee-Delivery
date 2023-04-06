@@ -5,13 +5,13 @@ export const ButtonCartStyled = styled.button`
   border: none;
   min-height: 2.2rem;
   min-width: 2.2rem;
-  background: ${(props) => props.theme['yellow-light']};
+  background: ${(props) => props.theme.colors['yellow-light']};
   border-radius: 0.4rem;
   transition: 0.5s;
   cursor: pointer;
 
   &:hover {
-    background: ${(props) => props.theme.yellow};
+    background: ${(props) => props.theme.colors.yellow};
   }
 
   svg {
@@ -25,8 +25,8 @@ export const ButtonCartStyled = styled.button`
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: ${(props) => props.theme['yellow-dark']};
-    color: ${(props) => props.theme.white};
+    background: ${(props) => props.theme.colors['yellow-dark']};
+    color: ${(props) => props.theme.colors.white};
     top: -30%;
     right: -30%;
     height: 20px;
