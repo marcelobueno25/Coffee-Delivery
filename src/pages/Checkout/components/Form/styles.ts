@@ -6,10 +6,11 @@ export const CheckoutFormStyled = styled.form`
 
   input {
     border: 2px solid ${(props) => props.theme.colors['base-button']};
-    padding: 10px 15px;
+    padding: 5px 15px;
     margin: 8px 5px;
     border-radius: 0.3em;
     background: ${(props) => props.theme.colors['base-input']};
     width: 100%;
+    height: 42px;
   }
 `

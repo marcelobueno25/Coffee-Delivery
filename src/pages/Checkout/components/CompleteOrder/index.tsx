@@ -1,8 +1,8 @@
-import { CardContainer } from '../../../../components/CardContainer/styles'
 import { TitleText } from '../../../../components/Typography'
-import { CheckoutHeader } from './styles'
-import { MapPinLine } from 'phosphor-react'
+import { MapPinLine, CurrencyDollar } from 'phosphor-react'
 import { CheckoutForm } from '../Form'
+import { CardCoffee } from '../CardCoffee'
+import { Payment } from '../Payment'
 
 export function CompleteOrder() {
   return (
@@ -10,29 +10,24 @@ export function CompleteOrder() {
       <TitleText size="xs" color="subtitle">
         Complete seu pedido
       </TitleText>
-      <CardContainer>
-        <CheckoutHeader>
-          <MapPinLine />
-          <div>
-            <p>Endereço de Entrega</p>
-            <small>Informe o endereço onde deseja receber seu pedido</small>
-          </div>
-        </CheckoutHeader>
-        <div>
-          <CheckoutForm />
-        </div>
-      </CardContainer>
-      <CardContainer>
-        <CheckoutHeader>
-          <MapPinLine />
-          <div>
-            <p>Pagamento</p>
-            <small>
-              O pagamento é feito na entrega. Escolha a forma que deseja pagar
-            </small>
-          </div>
-        </CheckoutHeader>
-      </CardContainer>
+
+      <CardCoffee
+        title="Endereço de Entrega"
+        subtitle={'Informe o endereço onde deseja receber seu pedido'}
+        icon={<MapPinLine />}
+      >
+        <CheckoutForm />
+      </CardCoffee>
+
+      <CardCoffee
+        title="Pagamento"
+        subtitle={
+          'O pagamento é feito na entrega. Escolha a forma que deseja pagar'
+        }
+        icon={<CurrencyDollar color="#8047F8" />}
+      >
+        <Payment />
+      </CardCoffee>
     </div>
   )
 }

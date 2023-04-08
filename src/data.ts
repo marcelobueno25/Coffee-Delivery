@@ -121,7 +121,6 @@ export const data: dataProps[] = [
     price: '9,90',
     src: image11,
   },
-
   {
     id: '12',
     name: 'Árabe',

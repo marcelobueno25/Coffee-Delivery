@@ -25,7 +25,10 @@ export const IntroContainer = styled.div`
   }
 
   .introRight {
+    display: flex;
+    justify-content: center;
     flex: 1;
+
     img {
       max-width: 30em;
       width: 100%;

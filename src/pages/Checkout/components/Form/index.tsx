@@ -5,20 +5,43 @@ export function CheckoutForm() {
   return (
     <CheckoutFormStyled>
       <Row>
-        <Column desktop={6}>
-          <input id="checkoutCep" type="text" placeholder="CEP" />
-        </Column>
-        <Column desktop={6}>
+        <Column mobile={12} tablet={12} desktop={5}>
           <input id="checkoutCep" type="text" placeholder="CEP" />
         </Column>
       </Row>
-      {/* <input id="checkoutCep" type="text" placeholder="CEP" />
-      <input id="checkoutRua" type="text" placeholder="Rua" />
-      <input id="checkoutNumero" type="text" placeholder="Números" />
-      <input id="checkoutComplemento" type="text" placeholder="Complemento" />
-      <input id="checkoutBairro" type="text" placeholder="Bairro" />
-      <input id="checkoutCidade" type="text" placeholder="Cidade" />
-      <input className="col-2" id="checkoutUf" type="text" placeholder="UF" /> */}
+      <Row>
+        <Column mobile={12} tablet={12} desktop={12}>
+          <input id="checkoutRua" type="text" placeholder="Rua" />
+        </Column>
+      </Row>
+      <Row>
+        <Column mobile={12} tablet={12} desktop={5}>
+          <input id="checkoutNumero" type="text" placeholder="Números" />
+        </Column>
+        <Column mobile={12} tablet={12} desktop={7}>
+          <input
+            id="checkoutComplemento"
+            type="text"
+            placeholder="Complemento"
+          />
+        </Column>
+      </Row>
+      <Row>
+        <Column mobile={12} tablet={12} desktop={5}>
+          <input id="checkoutBairro" type="text" placeholder="Bairro" />
+        </Column>
+        <Column mobile={12} tablet={12} desktop={5}>
+          <input id="checkoutCidade" type="text" placeholder="Cidade" />
+        </Column>
+        <Column mobile={12} tablet={12} desktop={2}>
+          <input
+            className="col-2"
+            id="checkoutUf"
+            type="text"
+            placeholder="UF"
+          />
+        </Column>
+      </Row>
     </CheckoutFormStyled>
   )
 }
