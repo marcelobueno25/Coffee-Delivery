@@ -10,6 +10,7 @@ export const CardContainer = styled.div`
   user-select: none;
   border-bottom: 1px solid ${(props) => props.theme.colors['base-button']};
   padding-bottom: 2rem;
+  column-gap: 0.6rem;
   padding-top: 0.5rem;
 `
 
@@ -26,7 +27,7 @@ export const CardContent = styled.div`
   flex: 3;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  row-gap: 10px;
+  row-gap: 0.5rem;
   flex-direction: column;
   width: 100%;
 `
@@ -36,7 +37,6 @@ export const CardHeader = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   height: 100%;
-  max-height: 40px;
   width: 100%;
 `
 
@@ -50,6 +50,7 @@ export const Name = styled(TitleText).attrs({
   weight: '400',
 })`
   margin-bottom: 0.5rem;
+  text-align: start;
 `
 
 export const Price = styled.p`
