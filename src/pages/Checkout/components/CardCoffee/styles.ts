@@ -5,7 +5,6 @@ export const CheckoutCardCoffee = styled.div`
   display: flex;
   justify-content: start;
   flex-direction: column;
-  align-items: start;
   text-align: center;
   background: ${(props) => props.theme.colors['base-card']};
   width: 100%;
@@ -18,7 +17,7 @@ export const CheckoutCardCoffee = styled.div`
 
 export const CheckoutHeader = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   text-align: left;
   margin-bottom: 1rem;
 

@@ -1,14 +1,11 @@
 import styled from 'styled-components'
 
-export const CheckoutHeader = styled.div`
+export const AlignPriceTotal = styled.div`
   display: flex;
-  justify-content: flex-end;
-  text-align: left;
+  width: 100%;
+  justify-content: space-between;
+`
 
-  svg {
-    height: 25px;
-    width: 25px;
-    color: ${(props) => props.theme.colors['yellow-dark']};
-    margin-right: 0.5em;
-  }
+export const AlignPrice = styled(AlignPriceTotal)`
+  padding-top: 1rem;
 `
