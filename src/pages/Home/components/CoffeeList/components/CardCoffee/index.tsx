@@ -1,5 +1,6 @@
-import { ButtonIcon } from '../ButtonIcon'
-import { Counter } from '../Counter'
+import { useContext, useEffect } from 'react'
+import { ButtonIcon } from '../../../../../../components/ButtonIcon'
+import { Counter } from '../../../../../../components/Counter'
 import {
   CardContainer,
   CoffeeImage,
@@ -11,9 +12,21 @@ import {
   CardButtons,
   Price,
 } from './styles'
-import { TitleText } from '../Typography'
+import { TitleText } from '../../../../../../components/Typography'
+import { CoffeeContext } from '../../../../../../contexts'
 
 export function CardCoffee({ coffee }: any) {
+  const { coffees, addCoffeeCart } = useContext(CoffeeContext)
+
+  const handleAddCoffee = (e: any) => {
+    // e.preventDefault()
+    addCoffeeCart(e)
+  }
+
+  useEffect(() => {
+    console.log('coffees: ', coffees)
+  }, [coffees])
+
   return (
     <CardContainer>
       <CoffeeImage
@@ -41,7 +54,7 @@ export function CardCoffee({ coffee }: any) {
 
         <CardButtons>
           <Counter />
-          <ButtonIcon />
+          <ButtonIcon coffee={coffee} handleAddCoffee={handleAddCoffee} />
         </CardButtons>
       </CardFooter>
     </CardContainer>

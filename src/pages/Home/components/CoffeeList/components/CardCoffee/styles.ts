@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { RegularText, TitleText } from '../Typography'
+import { RegularText, TitleText } from '../../../../../../components/Typography'
 
 const rotate = keyframes`
   from {

@@ -1,9 +1,9 @@
 import { ButtonIconStyled } from './styles'
 import { ShoppingCartSimple } from 'phosphor-react'
 
-export function ButtonIcon() {
+export function ButtonIcon({ coffee, handleAddCoffee }: any) {
   return (
-    <ButtonIconStyled>
+    <ButtonIconStyled onClick={() => handleAddCoffee(coffee)}>
       <ShoppingCartSimple weight="fill" />
     </ButtonIconStyled>
   )
